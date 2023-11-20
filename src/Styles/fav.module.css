@@ -1,0 +1,71 @@
+.allContent {
+    background-color: var(--dark);
+    min-height: calc(100vh - 56px);
+}
+
+.favCardPar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(350px, auto);
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 70px;
+}
+
+.favCard {
+    background-color: var(--dark);
+    color: #dddddd;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.buttonsContainer > a,
+.modelContent > div > button:last-of-type,
+.allContent > div:first-of-type > a {
+    background-color: var(--purple);
+    color: #eee;
+    transition: 0.3s;
+}
+
+.buttonsContainer > a:hover,
+.modelContent > div > button:last-of-type:hover,
+.allContent > div:first-of-type > a:hover {
+    background-color: var(--purple-dark);
+    border-color: var(--purple-dark);
+}
+
+.modelContent {
+    background-color: var(--dark);
+    color: #eee;
+}
+
+.modelContent > div:first-of-type {
+    font-size: 18px;
+    width: 99%;
+    padding: 25px 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 1199px) {
+    .favCardPar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .favCardPar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .favCardPar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .favCardPar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

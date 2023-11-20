@@ -1,0 +1,17 @@
+.searchFieldBigScreens {
+  display: flex;
+}
+
+.bottomNav {
+  display: none;
+  background-color: var(--dark);
+}
+
+@media (max-width: 991px) {
+  .searchFieldBigScreens {
+    display: none;
+  }
+  .bottomNav {
+    display: block;
+  }
+}

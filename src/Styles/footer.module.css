@@ -1,0 +1,35 @@
+#con li:nth-child(1):hover svg {
+  color: #1877f2;
+}
+#con li:nth-child(2):hover svg {
+  color: #f56040;
+}
+#con li:nth-child(3):hover svg {
+  color: #1da1f2;
+}
+#con li:nth-child(4):hover svg {
+  color: #ff0000;
+}
+#con li {
+  cursor: pointer;
+}
+a {
+  transition: 0.3s;
+}
+#ll:hover {
+  font-size: 30px !important;
+  color: rgb(226, 136, 0) !important;
+}
+
+#cat::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 0;
+  height: 3px;
+  bottom: -8px;
+  transition: 0.4s;
+}
+#cat:hover::before {
+  width: 35%;
+}

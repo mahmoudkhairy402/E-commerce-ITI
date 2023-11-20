@@ -1,0 +1,68 @@
+.form {
+  width: 90%;
+  border-right: 1px solid #fff;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: transparent;
+  transition: 0.3s;
+  z-index: 100;
+}
+.form:hover {
+  box-shadow: 0px 0px 10px 2px #fff;
+}
+.form h1 {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.form input {
+  transition: 0.3s;
+  position: relative;
+}
+.form input:focus {
+  border: none;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 1px #fff;
+}
+.form input:focus + label {
+  /* display: none; */
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  transition: 0.3s;
+}
+.form .errormsdisplay {
+  color: red;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 5px;
+  display: block;
+}
+.form .errormshidden {
+  color: red;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 5px;
+  display: block;
+}
+.image {
+  width: 100%;
+  text-align: center;
+}
+.image img {
+  max-width: 100%;
+  margin: 50px 20px;
+}
+textarea {
+  height: 120px !important;
+  transition: 0.3s !important;
+}
+textarea:focus {
+  border: none;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 1px #fff;
+}
